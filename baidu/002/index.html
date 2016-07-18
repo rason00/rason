@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>2</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="head">
+        <h1>网站一级标题</h1>
+        <ul>
+            <li><a href="#">导航链接1</a></li>
+            <li><a href="#">导航链接2</a></li>
+            <li><a href="#">导航链接3</a></li>
+            <li><a href="#">导航链接4</a></li>
+        </ul>
+    </div>
+    <article>
+        <h2>文章一级标题</h2>
+        <h3>文章二级标题</h3>
+        <h4>作者 发表时间</h4>
+        <div class="content">
+            <p>正文正文正文正文正文正文正文正文正文正文正</p>
+            <p>正文正文正文正文正文正文正文正文正文正文正</p>
+            <p>正文正文正文正文<a href="#">zhenwen</a>正文正文正文正文正文正文正</p>
+            <img src="004.jpg">
+            <p>正文正文正文正文正文正文正文正文正文正文正文</p>
+            <p>正文正文正文正文正文正文正文正文正文正文正文<br/>
+                正文正文正文正文正文</p>
+            <p>正文正文正<a href="#">111</a>文正文正文正文正文正文正文正文正文</p>
+        </div>
+    </article>
+    <article>
+        <h2>另一篇文章一级标题</h2>
+        <h3>文章二级标题</h3>
+        <h4>作者 发表时间</h4>
+        <div class="content">
+            <p>正文正文正文正文正文正文正文正文正文正文正文</p>
+            <p>正文正文正文正文正文正文正文正文正文正文正文<br/>
+                正文正文正文正文正文</p>
+            <p>正文正文正<a href="#">111</a>文正文正文正文正文正文正文正文正文</p>
+            <ul>
+                <li>列表项目1</li>
+                <li>列表项目2</li>
+                <li>列表项目3</li>
+            </ul>
+        </div>
+    </article>
+    <article class="pic">
+        <h2>图片</h2>
+        <figure>
+            <p>好看的图片：</p>
+            <img src="004.jpg">
+        </figure>
+        <figure>
+            <p>好看的图片：</p>
+            <img src="004.jpg">
+        </figure>
+        <figure>
+            <p>好看的图片：</p>
+            <img src="004.jpg">
+        </figure>
+        <figure>
+            <p>好看的图片：</p>
+            <img src="004.jpg">
+        </figure>
+        <figure>
+            <p>好看的图片：</p>
+            <img src="004.jpg">
+        </figure>
+    </article>
+
+    <article>
+        <h2>最后一篇文章一级标题</h2>
+        <h4>作者 发表时间</h4>
+        <ol>
+            <li>排名1</li>
+            <li>排名2</li>
+            <li>排名3</li>
+        </ol>
+        <p>下面是一个表格</p>
+        <table border="1">
+            <thead>
+                <th>表头</th>
+                <th>表头</th>
+                <th>表头</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>单元格</td>
+                    <td>单元格</td>
+                    <td><a href="#">操作</a></td>
+                </tr>
+                <tr>
+                    <td>单元格</td>
+                    <td>单元格</td>
+                    <td><a href="#">操作</a></td>
+                </tr>
+                <tr>
+                    <td>单元格</td>
+                    <td>单元格</td>
+                    <td><a href="#">操作</a></td>
+                </tr>
+                <tr>
+                    <td>单元格</td>
+                    <td>单元格</td>
+                    <td><a href="#">操作</a></td>
+                </tr>
+                <tr class="zongji">
+                    <td>总计</td>
+                    <td colspan="2">1000</td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+    <article class="biaodan">
+        <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
+        <h3>侧栏注册窗口标题</h3>
+        <form>
+            <div class="form1">
+                <label for="email" class="form0">邮箱：</label>
+                <input id="email" type="text" placeholder="邮箱">
+                <p>邮箱地址请按要求格式输入</p>
+            </div>
+            <div class="form2">
+                <label for="key" class="form0">密码：</label>
+                <input id="key" type="password" placeholder="密码">
+            </div>
+            <div class="form3">
+                <label for="key" class="form0">请重复密码：</label>
+                <input id="key" type="password" placeholder="重复输入密码">
+                <p>密码请为6-16位英文数字</p>
+            </div>
+        </form>
+        <form>
+            <div class="form4">
+                <label class="form0">性别：</label>
+                <input id="man" type="radio" checked="checked" name="sex" value="man">
+                <label for="man">男</label>
+                <input id="girl" type="radio" name="sex" value="girl">
+                <label for="girl">女</label>
+            </div>
+            <div class="form5">
+                <label class="form0">城市：</label>
+                <select>
+                    <option value="北京">北京</option>
+                    <option value="广州" selected>广州</option>
+                </select>
+            </div>
+            <div class="form6">
+                <label class="form0">爱好：</label>
+                <input type="checkbox" name="checkbox1" value="checkbox">
+                <label>运动</label>
+                <input type="checkbox" name="checkbox2" value="checkbox">
+                <label>艺术</label>
+                <input type="checkbox" name="checkbox3" value="checkbox">
+                <label>科学</label>
+            </div>
+            <div class="form7">
+                <label class="form0">个人描述：</label>
+                <textarea rows="2" cols="20" placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+            </div>
+            <div class="btn">
+                <input type="button" value="申请提交">
+            </div>
+        </form>
+    </article>
+    <div class="foot">
+        <p>版权所有©</p>
+    </div>
+</body>
+</html>
