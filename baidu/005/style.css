@@ -1,0 +1,168 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f1f1f1;
+    min-width: 1100px;
+}
+
+.left {
+    margin-right: 530px;
+}
+
+.right {
+    width: 550px;
+    float: right;
+}
+
+.head {
+    width: 100%;
+    height: 70px;
+    background-color: #000000;
+}
+
+.head h1 {
+    float: left;
+    color: #ffffff;
+    margin: 20px;
+}
+
+.head ul {
+    float: right;
+}
+
+.head li {
+    float: left;
+    margin: 10px;
+
+}
+
+.head li a {
+    color: #fff;
+    text-decoration:none;
+}
+
+article {
+    margin: 20px 20px 0 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    line-height: 2em;
+    box-shadow: 2px 2px 2px #848484;
+    /*border-bottom: 2px solid #aeaeae;*/
+    /*border-right: 2px solid #aeaeae;*/
+}
+
+article ul {
+    list-style: none;
+}
+
+.content {
+    text-indent: 32px;
+}
+
+article h4 {
+    font-size: 14px;
+    color: #d1d1d1;
+}
+
+.last {
+    clear: both;
+}
+
+.pic {
+    float: left;
+    margin-bottom: 20px;
+}
+
+.pic figure  {
+    text-align: center;
+    border: 1px solid #aeaeae;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    display: block;
+    float: left;
+}
+
+.pic figure img {
+    width: 110px;
+    height: 110px;
+}
+
+table {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+thead{
+    color: #ffffff;
+    background-color: #000000;
+    text-align: left;
+}
+
+.zongji {
+    background-color: #d1d1d1;
+}
+
+.biaodan h2 {
+    border-left:4px solid #dddddd;
+    padding: 10px;
+}
+
+.form7 textarea {
+    width:40%;
+    height:100px;
+}
+
+.biaodan div {
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.form0 {
+    float: left;
+    text-align: right;
+    width: 40%;
+    padding-right: 15px;
+}
+
+.biaodan div p {
+    margin-left:40%;
+    padding-left:15px;
+    font-size:12px;
+    color: #aaa;
+}
+
+.btn input{
+    margin-top: 10px;
+    clear: both;
+    width:100%;
+    height:40px;
+    border-radius: 10px;
+    background: #128fdc;
+    color: white;
+    font-size: 19px;
+}
+
+.foot {
+    clear: both;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.foot p {
+    padding-top: 15px;
+}
+
+
+
