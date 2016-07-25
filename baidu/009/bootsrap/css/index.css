@@ -1,0 +1,598 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-width: 1300px;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+/*导航栏开始*/
+.mynav {
+    height: 55px;
+    background-color: #2189bf;
+    margin-bottom: 0!important;
+    border: none!important;
+}
+
+.nav-logo img {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.nav-denglu {
+    color: #ffffff!important;
+    font-size: 10px;
+}
+
+.nav-denglu img {
+    margin-right: 10px;
+}
+
+.nav-ss-img {
+    position: absolute;
+    right: 270px;
+    top: 15px;
+}
+/*导航栏结束*/
+
+/*侧栏左边开始*/
+.con-left {
+    height: 1200px;
+    width: 15%;
+    background-color: #2a2e3d;
+    float: left;
+}
+
+.nav-left-img1 {
+    width: 58px;
+    height: 58px;
+    border: 1px solid #ffffff;
+    -moz-border-radius: 29px;
+    -webkit-border-radius: 29px;
+    position: absolute;
+    left: 3.8%;
+    top: 10%;
+}
+
+.nav-left-img2 {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    -moz-border-radius: 29px;
+    -webkit-border-radius: 29px;
+    position: absolute;
+    left: 4%;
+    top: 10.5%;
+}
+
+.nav-left-name {
+    color: #ffffff;
+    font-size: 16pt;
+    margin-top: 60px;
+    margin-left: 55%;
+}
+
+.con-left-sc {
+    margin-top: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.con-left-top-left {
+    float: left;
+    width: 50%;
+    border-right: 1px solid #67778b;
+    color: #67778b;
+    font-size: 16pt;
+    line-height: 10pt;
+    padding-top: 5px;
+}
+
+.con-left-top-right {
+    float: right;
+    width: 50%;
+    color: #67778b;
+    font-size: 16pt;
+    line-height: 10pt;
+    padding-top: 5px;
+}
+
+.con-left-form {
+    clear: both;
+    color: #535e71;
+    margin-top: 100px;
+    font-size: 12pt;
+   }
+
+.con-left-form li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.con-left-form li:hover {
+    background-color: #d1d1d1;
+}
+
+.con-left-open {
+    background-color: #383d4e;
+}
+
+.con-left-1 {
+    padding-left: 15%;
+}
+
+.con-left-active {
+    color: #ffffff;
+}
+
+.con-left-2 {
+    padding-left: 18%;
+}
+
+.con-left-3 {
+    padding-left: 23%;
+}
+/*侧栏左边结束*/
+
+/*右栏内容开始*/
+.con-right {
+    height: 1200px;
+    width: 85%;
+    float: right;
+    background-color: #eeeded;
+          }
+
+/*右栏搜索开始*/
+.search {
+    height: 130px;
+    background-color: #ffffff;
+    width: 80%;
+    margin: 10px 10%;
+    text-align: center;
+}
+
+.search-20 {
+    width: 20%;
+    float: left;
+}
+
+.search1 {
+    float: left;
+    padding-top: 10px;
+}
+
+.search1-1 {
+    color: #c9c9c9;
+    font-size: 12pt;
+    font-family: 黑体;
+    padding: 5px 10px;
+    float: right;
+}
+
+.search1-2 {
+    float: right;
+}
+
+.search2 {
+    float: left;
+    line-height: 14pt!important;
+    padding-top: 10px;
+    position: relative;
+}
+
+.search2-2 {
+    float: right;
+    width: 70%;
+    padding-right: 50px;
+}
+
+.search2-f2 {
+    clear: both;
+    padding-top: 10px;
+}
+
+.search2-img {
+    clear: both;
+    width: 20px;
+    position: absolute;
+    top: 38%;
+    right: 20px;
+}
+
+.search-40 {
+    width: 40%;
+}
+
+.search3 {
+    float: left;
+    padding-right: 5%;
+}
+
+.search3-2-1 {
+    width: 35%;
+}
+
+.search3-2-2 {
+    width: 25%;
+}
+
+.search3-2 {
+    clear: both;
+    margin-top: 25px;
+}
+
+.search-3 {
+    margin-top: 70px;
+}
+
+.search4 {
+    text-align: left;
+    padding-top: 45px;
+}
+/*右栏搜索结束*/
+
+/*右栏选择开始*/
+.choice {
+    margin: 0 9.5%;
+    width: 81.5%;
+
+
+}
+
+.choice div {
+    float: left;
+    margin: 5px;
+    height: 63px;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.choice-btn {
+    width: 3%;
+    line-height: 63px;
+}
+
+.choice-btn:hover {
+    background-color: #dfdfdf;
+}
+
+.choice-t1 {
+    width: 12%;
+}
+
+.choice-t1:hover {
+    border-top: 3px solid #4388c9;
+}
+
+.t1p {
+    font-size: 12pt;
+    color: #000000;
+    font-family: 微软雅黑;
+    margin-top: 5px;
+}
+
+.t1s {
+    color: #aaa;
+}
+
+.t1s span {
+    color: #ed7326;
+    font-size: 19pt;
+    font-family: 微软雅黑;
+    line-height: 0px;
+}
+
+.bor{
+    border: 1px solid #cacdd0;
+}
+
+.choice-t1-t {
+    border-top: 3px solid #4388c9;
+}
+
+.bor-rb {
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.choice-h {
+    background: url("../img/choice/h.png") no-repeat;
+    background-position: 10% 45%;
+    text-align: center;
+    font-size: 12pt;
+    line-height: 63px;
+    padding-left: 4%;
+
+}
+/*右栏选择结束*/
+
+/*右栏统计开始*/
+.statistics {
+    clear: both;
+    width: 80%;
+    margin: 0 9%;
+    height: 70px;
+}
+
+.statistics-div {
+    float: left;
+    margin: 0 10px;
+    width: 22.7%;
+    height: 70px;
+    background-color: #ffffff;
+}
+
+.statistics-p {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.s-p1 {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 12pt;
+}
+
+.s-p2 {
+    color: #b7b7b7;
+    font-size: 10pt;
+    padding-left: 10px;
+}
+
+.statistics-1 {
+    border-left: 3px solid #43b29e;
+}
+
+.statistics-2 {
+    border-left: 3px solid #388ac1;
+}
+
+.statistics-3 {
+    border-left: 3px solid #d04b36;
+}
+
+.statistics-4 {
+    border-left: 3px solid #e2cd47;
+}
+
+.s-d {
+    position: relative;
+    top: -58px;
+    float: right;
+    margin-right: 20px;
+    width: 30%;
+    height: 45px;
+}
+
+.s-d1 {
+    background-color: #43b29e;
+}
+
+.s-d2 {
+    background-color: #388ac1;
+}
+
+.s-d3 {
+    background-color: #d04b36;
+}
+
+.s-d4 {
+    background-color: #e2cd47;
+}
+/*右栏统计结束*/
+/*右栏表格开始*/
+.biaoge {
+    clear: both;
+    margin: 0 9.5%;
+    width: 80%;
+    margin-top: 60px;
+}
+
+.biaoge-div {
+    margin: 5px;
+    float: left;
+}
+
+.biaoge-60 {
+    width: 58.5%;
+    height: 355px;
+}
+
+.biaoge-40{
+    width: 38.5%;
+    height: 355px;
+}
+
+.yuan {
+    border-radius: 10px;
+}
+
+.biaoge-t {
+    background-color: #f4f6f7;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid #cacdd0;
+    font-size: 12pt;
+    color: #b5b5b5;
+    padding-top: 10px;
+    padding-left: 30px;
+    font-family: 微软雅黑;
+}
+
+.biaoge-c {
+    background-color: #ffffff;
+    height: 312px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+/*表格一*/
+.mytab1 ul  {
+    width: 60%;
+    margin: 10px 10px ;
+}
+
+.table1 table {
+    width: 60%;
+    margin-left: 10px;
+}
+
+.table1 table th {
+    height: 35px;
+    text-align: center;
+}
+
+.table1-a {
+    background-color: #f4f5f7;
+}
+
+/*表格二*/
+.mytab2 {
+    padding: 10px 50px;
+
+}
+
+.mytab2-p1 {
+    color: #c3c2c2;
+    font-size: 12pt;
+    font-family: 微软雅黑;
+    line-height: 12pt;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.mytab2-p2 {
+    font-size: 12pt;
+    font-family: 微软雅黑;
+    line-height: 12pt;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.mytab2-2 {
+    width: 100%;
+    height: 64px;
+    border-bottom: 1px solid #c3c2c2;
+    border-top: 1px solid #c3c2c2;
+}
+
+.mytab2-2 div {
+    float: left;
+}
+
+.mytab2-2-1 {
+    width: 30%;
+    border-right: 1px solid #c3c2c2;
+}
+
+.mytab2-2-2 {
+    width: 70%;
+}
+
+.mytab2-3 {
+    width: 100%;
+    height: 120px;
+}
+
+.mytab2-4 button{
+    float: right;
+}
+
+/*表格三*/
+.mytab3-1-1 {
+    width: 20%;
+    float: left;
+    margin: 5px;
+}
+
+.mytab3-1-1-s {
+    margin-left: 20px;
+}
+
+.mytab3-1{
+    margin: auto;
+}
+
+.mytab3-2 {
+    clear: both;
+}
+
+.mytab3p p {
+    float: left;
+    text-align: center;
+    font-size: 10px;
+}
+
+.mytab3p p:hover {
+    cursor:pointer;
+    background-color: #c3c2c2;
+}
+
+.mytab3-2 {
+    height: 30px;
+    /*width: 100%;*/
+    margin: 5px 0;
+    border-top: 1px solid #a9cfec;
+    border-bottom: 1px solid #c3c2c2;
+}
+
+.mytab3-w {
+    /*line-height: 30px;*/
+    width: 14%;
+    padding: 5px;
+}
+
+.mytab3-h {
+    height: 45px;
+    margin: 0px;
+}
+
+.mytab3-c {
+    border: 1px solid #f5c52a;
+}
+
+/*表格四*/
+.mytab4 {
+    width: 100%;
+    padding: 20px 40px;
+}
+
+.mytab4-t {
+    width: 100%;
+}
+
+.mytab4-t th {
+    text-align: center;
+}
+
+.mytab4-t-f {
+    float: left;
+    padding: 0 20px;
+}
+
+.mytab-t-j {
+    margin: 0 20px;
+}
+
+.mytab4-t-t {
+    padding-top: 5px;
+}
+
+/*右栏表格结束*/
+/*右栏内容结束*/
+
