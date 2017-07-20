@@ -51,7 +51,15 @@ $(".readmore").click(function () {
 			$(".gotop").css("display","block");
 		}else{
 			$(".gotop").css("display","nore");
-		}
+		};
+	// 用滑动距离监控，切换头部两个按钮的样式
+		if($("body").scrollTop()>540){
+			$(".btn1").addClass("browsing").removeClass("appdownload");
+			$(".btn2").addClass("appdownload").removeClass("browsing");
+		}else{
+			$(".btn1").addClass("appdownload").removeClass("browsing");
+			$(".btn2").addClass("browsing").removeClass("appdownload");
+		};
 	});
 
 })
