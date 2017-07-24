@@ -34,7 +34,12 @@ function appendDiv(j){
 	// 转换结束
 		if($(".content-main").children().length>=30){return};
         	$(".content-main").append(
-        	"<div class='main-box fl'><a href='http://daily.zhihu.com/story/"+ item.id +"' class='link'><img src="+str1+" alt='' class='main-img' id='main-img'><span class='main-title'>"+item.title+"</span></a></div>"
+			"<div class='main-box fl'>"+
+				"<a href='http://daily.zhihu.com/story/"+ item.id +"' class='link'>"+
+					"<img src="+str1+" alt='' class='main-img' id='main-img'>"+
+					"<span class='main-title'>"+item.title+"</span>"+
+				"</a>"+
+			"</div>"
 				);        	
         });
 };
