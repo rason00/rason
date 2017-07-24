@@ -17,4 +17,4 @@
 
 - 另图片加载时遇到了图片防盗链问题，最后在 https://github.com/biaodigit/vue-news 里找到了相应的处理方法，在此表示感谢。
 
-- 建议PC模式下推荐使用chrome移动端模式浏览去观看
+- 建议PC模式下使用chrome移动端模式浏览观看
