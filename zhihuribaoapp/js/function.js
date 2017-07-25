@@ -73,6 +73,7 @@ function saveId(id){
 // 增加新闻内容
 	function addNews(s,t){
 		$.each(s, function(i, item) {
+		changeSrc();
 	        $(".con-list ul").append(
 	        	"<li class='con-list-box' onclick='saveId("+item.id+")'>"+
 					"<a href='more.html'>"+
