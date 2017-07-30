@@ -122,11 +122,13 @@ body{
 .more-banner{
 	padding-top: 55px;
 	position: relative;
+	overflow: hidden;
 }
 .more-banner img{
 	width: 100%;
-	height: 100%;
-	overflow: hidden;
+	left: 50%;
+	position: absolute;
+	margin-left: -50%;
 }
 .span-1{
 	font-size: 20px;
