@@ -2,16 +2,17 @@
 	// 增加banner图片
 	function addBanner(s){
 		$.each(s, function(i, item) {
-	        	$(".banner-img").append(
-	        		"<li onclick='saveId("+item.id+")'>"+
-	        			"<a href='more.html'' title=''>"+
-	        				"<img src="+item.image+" />"+
-	        				"<span>"+item.title+"</span>"+
-	        			"</a>"+
-	        		"</li>"	
-	       		);
-	        	changeSrc();
-	    	});
+	        $(".banner-box").append(
+
+	        	"<div class='banner-img clearfix swiper-slide'>"+
+	        		"<a onclick='saveId("+item.id+")' href='more.html'>"+
+	        			"<img src="+item.image+" />"+
+	        			"<span>"+item.title+"</span>"+
+	        		"</a>"+
+	        	"</div>"
+	        );
+	        changeSrc();
+	    });
 	};
 	
 	// 增加日期
