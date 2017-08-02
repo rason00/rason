@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	// 改变banner高度
- 	$(".banner").height($(window).height()/3);
+ 	$(".banner").height($(window).height()/2-20);
  	// 获取数据
 	$.getJSON("https://zhihu-daily.leanapp.cn/api/v1/last-stories", function(data) {
         // 获取banner图片
