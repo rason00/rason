@@ -6,11 +6,16 @@ $(document).ready(function(){
         // 获取banner图片
         addBanner(data.STORIES.top_stories);
         // banner图片滑动效果插件
-	 	$('.banner-box ul').cycle({
-            fx : 'fade',
-            speed : 600,
-            pager : '.banner-box .banner-btn'
-        });
+	 	var mySwiper = new Swiper ('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+            autoplay : 5000,
+            speed:200,
+            autoplayDisableOnInteraction : false,
+
+            // 如果需要分页器
+            pagination: '.swiper-pagination',
+        })
 	 	// 新闻列表获取数据
 	 	addNews(data.STORIES.stories);
 	 	// 初始化date的时间，用于处理到达底部多少次而加载多少天前的内容
