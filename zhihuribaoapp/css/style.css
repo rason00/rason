@@ -1,6 +1,6 @@
-/*top start*/
+top start*/
 body{
-	
+
 }
 .top-nav{
 	width: 100%;
@@ -25,7 +25,6 @@ body{
 /*top end*/
 /*banner start*/
 .banner{
-	padding-top: 55px;
 	width: 100%;
 
 }
@@ -103,14 +102,21 @@ body{
 
 /*more-banner start*/
 .more-banner{
+	padding-top: 55px;
 	position: relative;
+	/*width: 100%;*/
 	overflow: hidden;
+	/*height: 100%;*/
 }
 .more-banner img{
+	/*display: block;*/
 	width: 100%;
-	left: 50%;
 	position: absolute;
+	left: 50%;
 	margin-left: -50%;
+	/*height: 100%;*/
+	/*overflow: hidden;*/
+
 }
 .span-1{
 	font-size: 20px;
@@ -144,10 +150,11 @@ body{
 }
 .meta{
 	padding: 10px 0px;
+	/*width: 100%-40px;*/
 	overflow: hidden;
 	height: 34px;
 	text-overflow:ellipsis;
-	white-space: nowrap; 
+	white-space: nowrap;
 }
 .author{
 	color: #000;
@@ -176,7 +183,8 @@ body{
 .answer .content img{
 	padding: 10px 0;
 	height: 100%;
-} 
+	width: 100%;
+}
 .view-more{
 	margin: 20px 0;
     width: 100%;
@@ -186,4 +194,5 @@ body{
     line-height: 34px;
     font-size: 18px;
 }
-/*more end*/
+
+/*more end
