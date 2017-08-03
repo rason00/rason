@@ -7,9 +7,6 @@
 	top: 0;
 	z-index: 999;
 }
-.excessive{
-	height: 78px;
-}
 .head-box{
 	height: 78px;
 }
@@ -36,6 +33,7 @@
 /*head end*/
 /*banner start*/
 .banner{
+	margin-top: 78px;
 	height: 460px;
 	background: #008bed;
 }
