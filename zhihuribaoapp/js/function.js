@@ -1,30 +1,29 @@
 
-	// 增加banner图片
-	function addBanner(s){
-		$.each(s, function(i, item) {
-	        $(".banner-box").append(
-
-	        	"<div class='banner-img clearfix swiper-slide'>"+
+// 增加banner图片
+function addBanner(s){
+	$.each(s, function(i, item) {
+		$(".banner-box").append(
+			"<div class='banner-img clearfix swiper-slide'>"+
 	        		"<a onclick='saveId("+item.id+")' href='more.html'>"+
 	        			"<img src="+item.image+" />"+
 	        			"<span>"+item.title+"</span>"+
 	        		"</a>"+
 	        	"</div>"
-	        );
-	        changeSrc();
-	    });
-	};
+		);
+		changeSrc();
+	});
+};
 	
-	// 增加日期
-	function addDate(d){
-		var dd = new Date(); 
-		dd.setDate(dd.getDate()-d);//获取d天后的日期
-		var m = dd.getMonth()+1;//获取当前月份的日期 
-		var d = dd.getDate();
-		$(".con-list ul").append(
-			"<p class='con-title'>"+m+"月"+d+"日"+"</p>"
-		); 
-	};	
+// 增加日期
+function addDate(d){
+	var dd = new Date(); 
+	dd.setDate(dd.getDate()-d);//获取d天后的日期
+	var m = dd.getMonth()+1;//获取当前月份的日期 
+	var d = dd.getDate();
+	$(".con-list ul").append(
+		"<p class='con-title'>"+m+"月"+d+"日"+"</p>"
+	); 
+};	
 
 // 文章详情页
 function moreContent(id){
@@ -52,6 +51,7 @@ function moreContent(id){
 	changeSrc();
 	});
 }
+
 // 转换图片的src，用于图片防盗链
 function changeSrc() {
 	// 获取有多少张图片
@@ -72,34 +72,34 @@ function saveId(id){
 }
 
 // 增加新闻内容
-	function addNews(s,t){
-		$.each(s, function(i, item) {
-	        	$(".con-list ul").append(
-	        		"<li class='con-list-box' onclick='saveId("+item.id+")'>"+
-					"<a href='more.html'>"+
-						"<span class='fl'>"+item.title+"</span>"+
-						"<img class='fr' src="+item.images+">"+
-					"</a>"+
-				"</li>"	
-	        	);
-	        	changeSrc();
-	   	 });
-		//从缓存里拿到高度，判断高度加载内容，然后把高度跳到之前位置。
-		var wHeight = localStorage.getItem("height");
-		   	if($(document).height() - $(window).height()<=wHeight){
-		       		$.getJSON("https://zhihu-daily.leanapp.cn/api/v1/last-stories", function(data) {
-		        		var date = data.STORIES.date-times;
-				    	var dayId = "https://zhihu-daily.leanapp.cn/api/v1/before-stories/"+date;
-				    	$.getJSON(dayId,function(data){
-				    		addDate(times);
-		        			addNews(data.STORIES.stories);
-		        		})
-		    			times++;
-		       	 	})
-		    	}else{
-		        $('body,html').animate({ scrollTop: wHeight }, 0);
-		        	$(window).scroll(function() {
-		        		localStorage.setItem("height",$(document).scrollTop());
-		        	})
-		    	}
-	};
+function addNews(s,t){
+	$.each(s, function(i, item) {
+	        $(".con-list ul").append(
+	        	"<li class='con-list-box' onclick='saveId("+item.id+")'>"+
+				"<a href='more.html'>"+
+					"<span class='fl'>"+item.title+"</span>"+
+					"<img class='fr' src="+item.images+">"+
+				"</a>"+
+			"</li>"	
+	        );
+	        changeSrc();
+	});
+	//从缓存里拿到高度，判断高度加载内容，然后把高度跳到之前位置。
+	var wHeight = localStorage.getItem("height");
+	if($(document).height() - $(window).height()<=wHeight){
+		$.getJSON("https://zhihu-daily.leanapp.cn/api/v1/last-stories", function(data) {
+			var date = data.STORIES.date-times;
+			var dayId = "https://zhihu-daily.leanapp.cn/api/v1/before-stories/"+date;
+			$.getJSON(dayId,function(data){
+				addDate(times);
+		        	addNews(data.STORIES.stories);
+		        })
+		    	times++;
+		})
+	}else{
+		$('body,html').animate({ scrollTop: wHeight }, 0);
+		$(window).scroll(function() {
+			localStorage.setItem("height",$(document).scrollTop());
+		})
+	}
+};
