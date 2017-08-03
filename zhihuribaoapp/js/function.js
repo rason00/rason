@@ -84,7 +84,7 @@ function saveId(id){
 	        	);
 	        	changeSrc();
 	   	 });
-		//重缓存里拿到高度，判断高度加载内容，然后把高度跳到之前位置。
+		//从缓存里拿到高度，判断高度加载内容，然后把高度跳到之前位置。
 		var wHeight = localStorage.getItem("height");
 		   	if($(document).height() - $(window).height()<=wHeight){
 		       		$.getJSON("https://zhihu-daily.leanapp.cn/api/v1/last-stories", function(data) {
