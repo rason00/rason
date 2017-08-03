@@ -50,7 +50,7 @@ $(".readmore").click(function () {
         return false;
  });
 
-	// 已窗口滑动了多少来控制返回顶部显示和隐藏 
+	// 以窗口滑动了多少来控制返回顶部显示和隐藏 
 	$(window).scroll(function(){		
 		if($("body").scrollTop()>1000){
 			$(".gotop").css("display","block");
