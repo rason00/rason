@@ -5,35 +5,43 @@
 	<title>知乎日报</title>
 	<meta name="viewport"
           content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<!-- 初始化css -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+<!-- banner块插件 -->
     <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css">
+<!-- css总样式 -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 </head>
-<body>
+<body>d
+<!-- 头部导航块 start -->
 	<div class="top-nav">
 		<img src="images/navigation.png" class="fl">
 		<h1 class="fl">首页</h1>
 	</div>
+<!-- 头部导航块 end -->
+<!-- banner start -->
 	<div class="banner swiper-container">
-
-        <div class="banner-box clearfix swiper-wrapper">
-
-        </div>
+        	<div class="banner-box clearfix swiper-wrapper"></div>
         <!-- 如果需要分页器 -->
-        <div class="swiper-pagination"></div>
-    </div>
+        	<div class="swiper-pagination"></div>
+    	</div>
+<!-- banner end -->
+<!-- 内容content start -->
 	<div class="content">
 		<p class="con-title" onclick="moreContent()">今日热闻</p>
 		<div class="con-list">
-			<ul>
-
-			</ul>
+			<ul></ul>
 		</div>
 	</div>
+<!-- 内容content end -->
+<!-- jq -->
 	<script src="js/jquery-1.10.1.min.js"></script>
+<!-- banner块插件 基于jq -->
 	<script src="js/swiper-3.4.2.jquery.min.js"></script>
+<!-- 函数块js -->
 	<script src="js/function.js"></script>
+<!-- index页js -->
 	<script src="js/index.js"></script>
 </body>
 
