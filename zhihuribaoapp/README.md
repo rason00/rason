@@ -4,13 +4,13 @@
 
 - Demo：
 
-        - html+css+js+jq版本：
+        1. html+css+js+jq版本：
 
-        - https://rason00.github.io/rason/zhihuribaoapp/index.html
+         - https://rason00.github.io/rason/zhihuribaoapp/index.html
 
-        - vue版本：
+        2. vue版本：
 
-        - https://rason00.github.io/rason/zhihuribaoapp/vue2.0/index.html
+         - https://rason00.github.io/rason/zhihuribaoapp/vue2.0/index.html
 
 - 仅实现：
 
