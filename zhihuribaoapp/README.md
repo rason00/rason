@@ -4,9 +4,12 @@
 
 - Demo：
 
-        - html+css+js+jq版本：
-        - https://rason00.github.io/rason/zhihuribaoapp/index.html
-        - vue版本：
+        - html+css+js+jq版本：  
+        
+        - https://rason00.github.io/rason/zhihuribaoapp/index.html  
+        
+        - vue版本：  
+        
         - https://rason00.github.io/rason/zhihuribaoapp/vue2.0/index.html  
 
 - 仅实现：
@@ -21,7 +24,7 @@
         
 - 2017/08/08增加
 
-        使用vue2.0-cli+vue-router+axios+mint-ui制作相同的页面展示（实现功能如上‘仅实现’）。
+        使用vue2.0-cli+vue-router+axios+mint-ui制作相同的页面展示（实现功能如上‘仅实现’）。  
 
 - 2017/08/02优化
 
