@@ -4,23 +4,23 @@
 
 - Demo：
 
-    html+css+js+jq版本：  
-        
-    https://rason00.github.io/rason/zhihuribaoapp/index.html  
-        
-    vue版本：  
-        
-    https://rason00.github.io/rason/zhihuribaoapp/vue2.0/index.html  
+        html+css+js+jq版本：  
+
+        https://rason00.github.io/rason/zhihuribaoapp/index.html  
+
+        vue版本：  
+
+        https://rason00.github.io/rason/zhihuribaoapp/vue2.0/index.html  
 
 - 仅实现：
 
-    1，主页的banner。
-        
-    2，主页内容部分排版与数据显示。
-        
-    3，滑动到底部自动加载前一天数据（未实现下拉刷新页面功能）。
+        1，主页的banner。
 
-    4，文章详情页面版面展示。
+        2，主页内容部分排版与数据显示。
+
+        3，滑动到底部自动加载前一天数据（未实现下拉刷新页面功能）。
+
+        4，文章详情页面版面展示。
 
 - 2017/08/08增加
 
