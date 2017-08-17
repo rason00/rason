@@ -5,7 +5,9 @@
 - Demo：   
 
         新版本：
-        
+
+        使用技术：HTML5、Sass、Bootstrap4
+
         https://rason00.github.io/rason/zhihuribaoweb/index.html
         
         旧版本：
