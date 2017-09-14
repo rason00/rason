@@ -27,7 +27,7 @@ $(document).ready(function () {
 			if ($(".content-news a").length >= 30) { return };
 			if ($(".content-news a").length >= 10) { z = 1; };
 			if ($(".content-news a").length >= 20) { z = 2; };
-			$("'.' + z ").append(
+			$("." + z).append(
 				"<a href='http://daily.zhihu.com/story/"+ item.id +"'>" +
 				"<div class='card card-box'>" +
 				"<img class='card-img-top' src=" + item.images + ">" +
