@@ -70,7 +70,7 @@ $(document).ready(function () {
 			$(".gotop").css("display","block");
 		}
 		if($("body").scrollTop()<1000){
-			console.log($("body").scrollTop());
+			//console.log($("body").scrollTop());
 			$(".gotop").css("display","none");
 		};
 	// 用滑动距离监控，切换头部两个按钮的样式
