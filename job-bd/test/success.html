@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=640,target-densitydpi=device-dpi,maximum-scale=1.0, user-scalable=no">
+  <script type="text/javascript">
+    var config = {};
+    ; (function () {
+      var config_width = 640,
+        config_height = 0,
+        html = document.documentElement,
+        delay, setSize = function () {
+          config.windowWidth = html.clientWidth || window.innerWidth || html.getBoundingClientRect().width;
+          config.windowHeight = html.clientHeight || window.innerHeight || html.getBoundingClientRect().height;
+          config.aspectRatio = config.windowWidth / config.windowHeight;
+
+          if (!config_width || config.aspectRatio > config_width / config_height) {
+            config.windowScale = config_height / config.windowHeight;
+            html.style.cssText += 'font-size:' + config.windowHeight * 100 / config_height + 'px!important;';
+          } else {
+            config.windowScale = config_width / config.windowWidth;
+            html.style.cssText += 'font-size:' + config.windowWidth * 100 / config_width + 'px!important;';
+          }
+          html.offsetWidth;
+        }
+      if (!config_height && !config_width) {
+        config_width = 640;
+      }
+      setSize();
+      document.addEventListener('DOMContentLoaded', function () {
+        window.addEventListener('resize', function () {
+          clearTimeout(delay);
+          delay = setTimeout(setSize, 50);
+        }, false);
+      }, false);
+    })();
+  </script>
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="success-box">
+    <div class="top">
+      <img src="images/logo.png" alt="logo" class="logo">
+      <a class="fr">游戏规则</a>
+    </div>
+    <div class="success-content-box">
+        <p class="title1">您已成功领取过</p>
+        <p class="content"></p>
+        <p class="title2">百元航线每周送 国内免票疯狂抢</p>
+        <a href="" class="click ma">参与南航暑假狂欢趴</a>
+        <a href="" class="click ma">呼朋唤友齐围观</a>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/fillandsuccess.js"></script>
+</body>
+
+</html>

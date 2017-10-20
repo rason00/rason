@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=640,target-densitydpi=device-dpi,maximum-scale=1.0, user-scalable=no">
+  <script type="text/javascript">
+    var config = {};
+    ; (function () {
+      var config_width = 640,
+        config_height = 0,
+        html = document.documentElement,
+        delay, setSize = function () {
+          config.windowWidth = html.clientWidth || window.innerWidth || html.getBoundingClientRect().width;
+          config.windowHeight = html.clientHeight || window.innerHeight || html.getBoundingClientRect().height;
+          config.aspectRatio = config.windowWidth / config.windowHeight;
+
+          if (!config_width || config.aspectRatio > config_width / config_height) {
+            config.windowScale = config_height / config.windowHeight;
+            html.style.cssText += 'font-size:' + config.windowHeight * 100 / config_height + 'px!important;';
+          } else {
+            config.windowScale = config_width / config.windowWidth;
+            html.style.cssText += 'font-size:' + config.windowWidth * 100 / config_width + 'px!important;';
+          }
+          html.offsetWidth;
+        }
+      if (!config_height && !config_width) {
+        config_width = 640;
+      }
+      setSize();
+      document.addEventListener('DOMContentLoaded', function () {
+        window.addEventListener('resize', function () {
+          clearTimeout(delay);
+          delay = setTimeout(setSize, 50);
+        }, false);
+      }, false);
+    })();
+  </script>
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="fill-box">
+    <div class="top">
+      <img src="images/logo.png" alt="logo" class="logo">
+      <a class="fr">游戏规则</a>
+    </div>
+    <div class="fill-content-box">
+      <p class="title1">恭喜您</p>
+      <p class="content"></p>
+      <p class="text">温馨提示：请联系现场工作人员领取</p>
+      <div class="content-fill ma">
+        <p class="title2">请填写正确信息</p>
+        <div class="con-f-box ma">
+          <!-- <span class="name">姓名</span> -->
+          <input type="text" class="fillin ma" placeholder="姓名">
+        </div>
+      </div>
+      <a class="click ma" onclick="changerRouter()">现场工作人员核销</a>
+    </div>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/fillandsuccess.js" defer async></script>
+</body>
+
+</html>
