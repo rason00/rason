@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=640,target-densitydpi=device-dpi,maximum-scale=1.0, user-scalable=no">
+  <script type="text/javascript">
+    var config = {};
+    (function () {
+      var config_width = 640,
+        config_height = 0,
+        html = document.documentElement,
+        delay, setSize = function () {
+          config.windowWidth = html.clientWidth || window.innerWidth || html.getBoundingClientRect().width;
+          config.windowHeight = html.clientHeight || window.innerHeight || html.getBoundingClientRect().height;
+          config.aspectRatio = config.windowWidth / config.windowHeight;
+
+          if (!config_width || config.aspectRatio > config_width / config_height) {
+            config.windowScale = config_height / config.windowHeight;
+            html.style.cssText += 'font-size:' + config.windowHeight * 100 / config_height + 'px!important;';
+          } else {
+            config.windowScale = config_width / config.windowWidth;
+            html.style.cssText += 'font-size:' + config.windowWidth * 100 / config_width + 'px!important;';
+          }
+          // html.offsetWidth;
+        }
+      if (!config_height && !config_width) {
+        config_width = 640;
+      }
+      setSize();
+      document.addEventListener('DOMContentLoaded', function () {
+        window.addEventListener('resize', function () {
+          clearTimeout(delay);
+          delay = setTimeout(setSize, 50);
+        }, false);
+      }, false);
+    })();
+  </script>
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="home-box">
+    <div class="top">
+      <img src="images/logo.png" alt="logo" class="logo">
+      <a class="fr">游戏规则</a>
+    </div>
+    <h1 class="home-title ma"></h1>
+    <div class="content-box ma pr">
+      <img src="images/contentbg.png" alt="" class="bg">
+      <img src="images/pointer.png" alt="" class="pointer">
+    </div>
+    <a class="click ma">点击抽奖</a>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/rotaryDraw.js"></script>
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
